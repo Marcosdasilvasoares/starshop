@@ -40,3 +40,19 @@ figcapition {
       float: right;
       margin: 0 0 10px 10px;
   }
+
+  p::first-letter {
+    font-weight: bold;
+  }
+
+  h1 + p {
+    text-indent: 0;
+  }
+
+  p::first-line {
+      font-variant: small-caps;
+  }
+
+  :not(p) + p::first-line {
+    font-variant: small-caps;
+  }
